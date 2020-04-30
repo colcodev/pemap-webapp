@@ -7,11 +7,12 @@
   "scripts": {
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "start": "npm run watch:css && react-scripts start",
-    "build": "npm run build:css && react-scripts build",
+    "prestart": "npm run watch:css",
+    "start": "react-scripts start",
+    "prebuild": "npm run build:css",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cypress:open": "cypress open",
     "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },

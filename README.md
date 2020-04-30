@@ -30,7 +30,7 @@ yarn install
 
 Para levantar el servicio, primero se debe crear el archivo `.env` a partir de `.env.example` y editarlo con los valores correspondientes para las variables `REACT_APP_API_URL` y `REACT_APP_GOOGLE_MAPS_API_KEY` (se pueden usar las actuales).
 
-Al haber sido iniciada con `create-react-app`, la documentación de abajo es la original y totalmente válida para la puesta en marcha, test y build.
+Al haber sido iniciada con **create-react-app**, la documentación de abajo es la original y totalmente válida para la puesta en marcha, test y build.
 
 ## Puntos faltantes
 
