@@ -32,6 +32,8 @@ Para levantar el servicio, primero se debe crear el archivo `.env` a partir de `
 
 Al haber sido iniciada con **create-react-app**, la documentación de abajo es la original y totalmente válida para la puesta en marcha, test y build.
 
+Un detalle a tener en cuenta, al hacer logout o salir de la session, hice que se borre el token de aplicación y **no solicite uno nuevo automaticamente** (algo que deberia hacer) para asi generar un error al intentar volver a ingresar a una cuenta y notificar al ususario. Esta hecho así para mostrar el manejo de un posible error de authenticacion de la aplicación. Con refrescar, se puede continuar, como sugiere el mensaje de error.
+
 ## Puntos faltantes
 
 Creo que lo que falta es completar los test y mejorar la covertura. Por ahora tiene escritos un par de smoke-tests, pero se podría implementar mocks de context y requests para testear los componentes que lo utilizan. Además deberíamos utilizar un framework como [cypress](https://www.cypress.io) para correr test de integración.
